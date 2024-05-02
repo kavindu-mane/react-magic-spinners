@@ -10,19 +10,20 @@ const GridLoader = ({
   iterationCount = "infinite",
   style,
   className,
+  margin = 2.4,
 }: GridLoaderProps) => {
-  
   const commonProps = {
     width: dotsSize,
     height: dotsSize,
     animationDuration: `${duration}s`,
     backgroundColor: color,
     animationIterationCount: iterationCount,
+    margin: margin,
   };
 
   return (
     <div
-      className={`rms-wrapper ${className}`}
+      className={`rms-grid-loader-wrapper ${className}`}
       style={{
         backgroundColor,
         ...style,

@@ -8,4 +8,5 @@ export type GridLoaderProps = {
   iterationCount?: number | string;
   style?: React.CSSProperties;
   className?: string;
+  margin?: number | string;
 };

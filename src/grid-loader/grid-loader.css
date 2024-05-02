@@ -1,12 +1,11 @@
-.rms-wrapper {
+.rms-grid-loader-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   background-color: transparent;
 }
 
-.rms-wrapper span {
-  margin: 0.15rem;
+.rms-grid-loader-wrapper span {
   border-radius: 50%;
   transform-origin: center;
   animation: animate-dots linear;
