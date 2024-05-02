@@ -1,0 +1,27 @@
+.rms-bar-loader-wrapper {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.rms-bar-loader-wrapper span {
+  transform-origin: left;
+  animation: animate-bar ease-in-out;
+  animation-fill-mode: forwards;
+  height: inherit;
+}
+
+@keyframes animate-bar {
+  0% {
+    transform: translateX(-100%) scaleX(1);
+  }
+  50% {
+    transform: translateX(125%) scaleX(0.1);
+  }
+  50.00001% {
+    transform: translateX(-100%) scaleX(0.1);
+  }
+  100% {
+    transform: translateX(125%) scaleX(1);
+  }
+}
