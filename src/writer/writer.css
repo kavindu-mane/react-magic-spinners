@@ -1,15 +1,15 @@
 /* animated logo styles - start */
-.logo-animate {
+.rms-logo-animate {
   animation: alternate animate-stroke;
   fill: transparent;
-  --magic-spinner-color: #d20062;
+  --rms-writer-color: #d20062;
 }
 
 @keyframes animate-stroke {
   0%,
   10% {
     fill: transparent;
-    stroke: var(--magic-spinner-color);
+    stroke: var(--rms-writer-color);
     stroke-width: 3;
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 32%;
@@ -17,13 +17,13 @@
 
   50% {
     fill: transparent;
-    stroke: var(--magic-spinner-color);
+    stroke: var(--rms-writer-color);
     stroke-width: 3;
   }
 
   90%,
   100% {
-    fill: var(--magic-spinner-color);
+    fill: var(--rms-writer-color);
     stroke: transparent;
     stroke-width: 3;
     stroke-dashoffset: -25%;

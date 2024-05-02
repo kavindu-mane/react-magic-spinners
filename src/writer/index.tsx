@@ -9,9 +9,11 @@ const Writer = ({
   fontWeight = 600,
   width = 500,
   height = 200,
-  duration = "3s",
+  duration = 3,
   backgroundColor = "transparent",
   iterationCount = "infinite",
+  style,
+  className,
 }: WriterProps) => {
   return (
     <svg
@@ -20,7 +22,9 @@ const Writer = ({
         width: `${width}px"`,
         height: `${height}px`,
         backgroundColor,
+        ...style,
       }}
+      className={className}
     >
       <text
         x="50%"
@@ -31,10 +35,10 @@ const Writer = ({
           fontSize,
           fontFamily,
           fontWeight,
-          animationDuration: duration,
+          animationDuration: `${duration}s`,
           animationIterationCount: iterationCount,
         }}
-        className={"logo-animate"}
+        className={"rms-logo-animate"}
       >
         {text}
       </text>

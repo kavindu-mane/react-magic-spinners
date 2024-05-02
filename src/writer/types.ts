@@ -1,3 +1,5 @@
+import React from "react";
+
 export type WriterProps = {
   text?: string;
   fontSize?: number | string;
@@ -6,6 +8,8 @@ export type WriterProps = {
   width?: number;
   height?: number;
   backgroundColor?: string;
-  duration?: string;
+  duration?: number;
   iterationCount?: number | string;
+  style?: React.CSSProperties;
+  className?: string;
 };

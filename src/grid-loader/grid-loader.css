@@ -1,0 +1,23 @@
+.rms-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: transparent;
+}
+
+.rms-wrapper span {
+  margin: 0.15rem;
+  border-radius: 50%;
+  transform-origin: center;
+  animation: animate-dots linear;
+}
+
+@keyframes animate-dots {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+}
