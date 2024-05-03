@@ -10,7 +10,9 @@ const GridLoader = ({
   iterationCount = "infinite",
   style,
   className,
-  margin = 2.4,
+  margin = 3,
+  rows = 3,
+  columns = 3,
 }: GridLoaderProps) => {
   const commonProps = {
     width: dotsSize,
@@ -26,63 +28,20 @@ const GridLoader = ({
       className={`rms-grid-loader-wrapper ${className}`}
       style={{
         backgroundColor,
+        gridTemplateColumns: `repeat(${columns}, 1fr)`,
+        gridTemplateRows: `repeat(${rows}, 1fr)`,
         ...style,
       }}
     >
-      <span
-        style={{
-          animationDelay: "0s",
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: `${-duration / 2}s`,
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: `${-duration}s`,
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: `${-duration / 2}s`,
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: `${-duration}s`,
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: "0s",
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: `${-duration}s`,
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: "0s",
-          ...commonProps,
-        }}
-      />
-      <span
-        style={{
-          animationDelay: `${-duration / 2}s`,
-          ...commonProps,
-        }}
-      />
+      {Array.from({ length: rows * columns }, (_, index) => (
+        <span
+          key={index}
+          style={{
+            ...commonProps,
+            animationDelay: `${-(duration / (rows * columns)) * index}s`,
+          }}
+        />
+      ))}
     </div>
   );
 };

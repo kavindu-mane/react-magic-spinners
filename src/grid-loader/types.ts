@@ -9,4 +9,6 @@ export type GridLoaderProps = {
   style?: React.CSSProperties;
   className?: string;
   margin?: number | string;
+  rows?: number;
+  columns?: number;
 };
