@@ -11,6 +11,7 @@ const BarLoader = ({
   iterationCount = "infinite",
   style,
   className,
+  isRoundCap = true,
 }: BarLoaderProps) => {
   const commonProps = {
     width: "80%",
@@ -24,7 +25,7 @@ const BarLoader = ({
       className={`rms-bar-loader-wrapper ${className}`}
       style={{
         backgroundColor: trackColor,
-        borderRadius: height,
+        borderRadius: isRoundCap ? height : "0px",
         height: height,
         width: width,
         ...style,

@@ -9,4 +9,5 @@ export type BarLoaderProps = {
   iterationCount?: number | string;
   style?: React.CSSProperties;
   className?: string;
+  isRoundCap?: boolean;
 };
