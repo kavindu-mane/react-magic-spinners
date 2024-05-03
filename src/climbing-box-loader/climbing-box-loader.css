@@ -1,0 +1,43 @@
+.rms-climbing-box-loader-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rms-climbing-box-loader-wrapper span {
+  position: absolute;
+  transform-origin: center center;
+  animation: animate-climbing-box ease-in-out;
+  transform: rotate(45deg);
+  bottom: 20%;
+  left: 10%;
+}
+
+.rms-climbing-box-loader-wrapper div {
+  transform: rotateZ(-45deg);
+}
+
+@keyframes animate-climbing-box {
+  0%,
+  100% {
+    transform: rotate(45deg);
+    bottom: 20%;
+    left: 10%;
+  }
+  25% {
+    transform: rotate(135deg);
+    bottom: 35%;
+    left: 25%;
+  }
+  50% {
+    transform: rotate(225deg);
+    bottom: 50%;
+    left: 40%;
+  }
+  75% {
+    transform: rotate(315deg);
+    bottom: 65%;
+    left: 55%;
+  }
+}
