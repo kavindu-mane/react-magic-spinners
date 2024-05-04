@@ -1,6 +1,14 @@
 # <p align = "center">🚀 React Magic Spinners.</p>
 
 <div align = "center">
+<video autoplay src = "" alt = "cover"/>
+</div>
+
+<video width="300" height="200" autoplay="autoplay" src="https://github.com/kavindu-mane/react-magic-spinners/assets/99143916/8d148b5e-4c47-4f13-a6f7-ef8f396e1584" type="video/mp4"/>
+
+
+
+<div align = "center">
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/kavindu-mane/react-magic-spinners">
 <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/react-magic-spinners">
 <img alt="npm" src="https://img.shields.io/npm/v/react-magic-spinners?label=npm%20version">
@@ -40,7 +48,7 @@ pnpm add react-magic-spinners
 ```
 
 ## Usage
- _Import the progress bar components:_
+ _Import the spinner components:_
 
 ```javascript
 import { BeatLoader } from "react-magic-spinners";
