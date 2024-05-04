@@ -20,7 +20,7 @@ const ClipLoader = ({
 
   return (
     <div
-      className={`rms-circle-loader-wrapper ${className}`}
+      className={`rms-clip-loader-wrapper ${className}`}
       style={{
         width: size,
         height: size,

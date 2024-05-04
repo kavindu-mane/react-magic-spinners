@@ -38,3 +38,185 @@ _Install with pnpm:_
 ```bash
 pnpm add react-magic-spinners
 ```
+
+## Usage
+ _Import the progress bar components:_
+
+```javascript
+import { BeatLoader } from "react-magic-spinners";
+```
+Now you can use both components like bellow.
+
+ _Use with default styles:_
+ 
+ ```jsx
+<BeatLoader/>
+ ```
+
+   _Use with props:_
+ 
+ ```jsx
+<BeatLoader
+  dotsSize={"2rem"}
+  duration={2}
+  dotsCount = {3}
+  iterationCount = "infinity"
+/>
+```
+
+## Available Spinners
+ * BarLoader
+ * BeatLoader
+ * BounceLoader
+ * CircleLoader
+ * ClimbingBoxLoader
+ * ClipLoader
+ * GridLoader
+ * Writer
+  
+## Props
+
+<details>
+<summary>BarLoader</summary>
+
+| Name            | Description                     | Default    | Required | Data Type           |
+|-----------------|---------------------------------|------------|----------|---------------------|
+| width           | Width of the loader             | `200`      | No       | number or string    |
+| height          | Height of the loader            | `10`       | No       | number or string    |
+| duration        | Duration of the animation       | `3`        | No       | number              |
+| color           | Color of the loader             | `#d20062`  | No       | string              |
+| trackColor      | Color of the loader's track     | `#d2006260`| No       | string              |
+| iterationCount  | Number of animation iterations  | `infinite` | No       | number or string    |
+| style           | CSS styles                      | `undefined`| No       | React.CSSProperties |
+| className       | CSS class name                  | `undefined`| No       | string              |
+| isRoundCap      | Whether the loader has round cap| `true`     | No       | boolean             |
+
+</details>
+
+
+<details>
+<summary>BeatLoader</summary>
+
+| Name               | Description                     | Default     | Required | Data Type           |
+|--------------------|---------------------------------|-------------|----------|---------------------|
+| dotsSize           | Size of the dots                | `16`        | No       | number or string    |
+| duration           | Duration of the animation       | `0.5`       | No       | number              |
+| color              | Color of the loader             | `#d20062`   | No       | string              |
+| iterationCount     | Number of animation iterations  | `infinite`  | No       | number or string    |
+| style              | CSS styles                      | `undefined` | No       | React.CSSProperties |
+| className          | CSS class name                  | `undefined` | No       | string              |
+| margin             | Margin between the dots         | `4`         | No       | number or string    |
+| dotsCount          | Number of dots in the loader    | `3`         | No       | number              |
+
+</details>
+
+
+<details>
+<summary>BounceLoader</summary>
+
+| Name               | Description                       | Default     | Required | Data Type           |
+|--------------------|-----------------------------------|-------------|----------|---------------------|
+| size               | Size of the loader                | `64`        | No       | number or string    |
+| duration           | Duration of the animation         | `2`         | No       | number              |
+| color              | Color of the loader               | `#d20062`   | No       | string              |
+| iterationCount     | Number of animation iterations    | `infinite`  | No       | number or string    |
+| style              | CSS styles                        | `undefined` | No       | React.CSSProperties |
+| className          | CSS class name                    | `undefined` | No       | string              |
+| isBorderOnly       | Whether the loader is border only | `false`     | No       | boolean             |
+| borderWidth        | Width of the border               | `2`         | No       | number              |
+
+</details>
+
+<details>
+<summary>CircleLoader</summary>
+
+| Name               | Description                     | Default     | Required | Data Type           |
+|--------------------|---------------------------------|-------------|----------|---------------------|
+| size               | Size of the loader              | `112`       | No       | number or string    |
+| borderWidth        | Width of the border             | `1`         | No       | number              |
+| circleCount        | Number of circles in the loader | `5`         | No       | number              |
+| duration           | Duration of the animation       | `1`         | No       | number              |
+| color              | Color of the loader             | `#d20062`   | No       | string              |
+| iterationCount     | Number of animation iterations  | `infinite`  | No       | number or string    |
+| style              | CSS styles                      | `undefined` | No       | React.CSSProperties |
+| className          | CSS class name                  | `undefined` | No       | string              |
+| isCentered         | Whether the loader is centered  | `false`     | No       | boolean             |
+
+</details>
+
+<details>
+<summary>ClimbingBoxLoader</summary>
+
+| Name               | Description                     | Default     | Required | Data Type           |
+|--------------------|---------------------------------|-------------|----------|---------------------|
+| size               | Size of the loader              | `16`        | No       | number              |
+| duration           | Duration of the animation       | `2`         | No       | number              |
+| color              | Color of the loader             | `#d20062`   | No       | string              |
+| iterationCount     | Number of animation iterations  | `infinite`  | No       | number or string    |
+| style              | CSS styles                      | `undefined` | No       | React.CSSProperties |
+| className          | CSS class name                  | `undefined` | No       | string              |
+
+</details>
+
+<details>
+<summary>ClipLoader</summary>
+
+| Name               | Description                     | Default     | Required | Data Type           |
+|--------------------|---------------------------------|-------------|----------|---------------------|
+| size               | Size of the loader              | `32`        | No       | number              |
+| borderWidth        | Width of the border             | `2`         | No       | number              |
+| duration           | Duration of the animation       | `1`         | No       | number              |
+| color              | Color of the loader             | `#d20062`   | No       | string              |
+| iterationCount     | Number of animation iterations  | `infinite`  | No       | number or string    |
+| style              | CSS styles                      | `undefined` | No       | React.CSSProperties |
+| className          | CSS class name                  | `undefined` | No       | string              |
+
+</details>
+
+<details>
+<summary>GridLoader</summary>
+
+| Name               | Description                     | Default             | Required | Data Type           |
+|--------------------|---------------------------------|---------------------|----------|---------------------|
+| dotsSize           | Size of the dots                | `16`                | No       | number or string    |
+| duration           | Duration of the animation       | `1`                 | No       | number              |
+| color              | Color of the loader             | `#d20062`           | No       | string              |
+| backgroundColor    | Background color of the loader  | `transparent`       | No       | string              |
+| iterationCount     | Number of animation iterations  | `infinite`          | No       | number or string    |
+| style              | CSS styles                      | `undefined`         | No       | React.CSSProperties |
+| className          | CSS class name                  | `undefined`         | No       | string              |
+| margin             | Margin between the dots         | `3`                 | No       | number or string    |
+| rows               | Number of rows in the grid      | `3`                 | No       | number              |
+| columns            | Number of columns in the grid   | `3`                 | No       | number              |
+
+</details>
+
+<details>
+<summary>Writer</summary>
+
+| Name               | Description                     | Default             | Required | Data Type           |
+|--------------------|---------------------------------|---------------------|----------|---------------------|
+| text               | Text to be written              | `Hello`             | No       | string              |
+| fontSize           | Font size of the text           | `5rem`              | No       | number or string    |
+| fontFamily         | Font family of the text         | `Arial`             | No       | string              |
+| fontWeight         | Font weight of the text         | `600`               | No       | number or string    |
+| width              | Width of the loader             | `500`               | No       | number              |
+| height             | Height of the loader            | `200`               | No       | number              |
+| backgroundColor    | Background color of the loader  | `transparent`       | No       | string              |
+| duration           | Duration of the animation       | `3`                 | No       | number              |
+| iterationCount     | Number of animation iterations  | `infinite`          | No       | number or string    |
+| style              | CSS styles                      | `undefined`         | No       | React.CSSProperties |
+| className          | CSS class name                  | `undefined`         | No       | string              |
+
+_If you need change writer text color.add this line to your css file_
+
+```css
+ --rms-writer-color: your color;
+```
+
+</details>
+
+
+## License
+
+[![View License](https://img.shields.io/github/license/kavindu-mane/react-magic-spinners?color=success)](LICENSE)

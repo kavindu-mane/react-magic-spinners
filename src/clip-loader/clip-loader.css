@@ -1,14 +1,14 @@
-.rms-circle-loader-wrapper {
+.rms-clip-loader-wrapper {
   display: flex;
   position: relative;
 }
 
-.rms-circle-loader-wrapper span {
+.rms-clip-loader-wrapper span {
   border-radius: 50%;
-  animation: animate-circle linear;
+  animation: animate-clip linear;
 }
 
-@keyframes animate-circle {
+@keyframes animate-clip {
   0% {
     transform: rotate(0);
   }
