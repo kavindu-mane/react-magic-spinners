@@ -1,7 +1,7 @@
 # <p align = "center">🚀 React Magic Spinners.</p>
 
 <div align = "center">
-<img autoplay src = "https://github.com/kavindu-mane/react-magic-spinners/blob/main/rms-cover.gif" alt = "cover"/>
+<img src = "https://github.com/kavindu-mane/react-magic-spinners/blob/main/rms-cover.gif" alt = "cover"/>
 </div>
 
 <div align = "center">
