@@ -9,13 +9,16 @@ const BounceLoader = ({
   iterationCount = "infinite",
   style,
   className,
+  isBorderOnly = false,
+  borderWidth = 2,
 }: BounceLoaderProps) => {
   const commonProps = {
     width: size,
     height: size,
     animationDuration: `${duration}s`,
-    backgroundColor: color,
+    backgroundColor: isBorderOnly ? "transparent" : color,
     animationIterationCount: iterationCount,
+    border: isBorderOnly ? `${borderWidth}px solid ${color}` : "none",
   };
 
   return (

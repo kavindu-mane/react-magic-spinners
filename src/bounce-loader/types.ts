@@ -5,6 +5,8 @@ export type BounceLoaderProps = {
   duration?: number;
   color?: string;
   iterationCount?: number | string;
+  isBorderOnly?: boolean;
+  borderWidth?: number;
   style?: React.CSSProperties;
   className?: string;
 };
