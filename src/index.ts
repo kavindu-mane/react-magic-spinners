@@ -4,3 +4,4 @@ export { default as BarLoader } from "./bar-loader";
 export { default as BeatLoader } from "./beat-loader";
 export { default as BounceLoader } from "./bounce-loader";
 export { default as ClimbingBoxLoader } from "./climbing-box-loader";
+export { default as CircleLoader } from "./circle-loader";
