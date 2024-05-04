@@ -28,6 +28,7 @@ const GridLoader = ({
       className={`rms-grid-loader-wrapper ${className}`}
       style={{
         backgroundColor,
+        width:"fit-content",
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
         gridTemplateRows: `repeat(${rows}, 1fr)`,
         ...style,

@@ -1,6 +1,6 @@
 {
   "name": "react-magic-spinners",
-  "version": "0.0.1-beta.3",
+  "version": "0.1.0",
   "description": "React Magic Spinners is a collection of loading spinners for React.js",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

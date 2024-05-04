@@ -215,7 +215,7 @@ Now you can use both components like bellow.
 _If you need change writer text color.add this line to your css file_
 
 ```css
- --rms-writer-color: your color;
+ --rms-writer-color: your color !important;
 ```
 
 </details>

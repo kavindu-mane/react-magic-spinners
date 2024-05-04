@@ -19,7 +19,7 @@ const ClimbingBoxLoader = ({
     borderWidth: size / 5,
     borderColor: color,
     borderStyle: "solid",
-    marginBottom: (2 * size) / 5,
+    marginBottom: (size) / 5,
   };
 
   return (
