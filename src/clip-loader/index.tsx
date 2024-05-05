@@ -22,8 +22,8 @@ const ClipLoader = ({
     <div
       className={`rms-clip-loader-wrapper ${className}`}
       style={{
-        width: size,
-        height: size,
+        width: "fit-content",
+        height: "fit-content",
         ...style,
       }}
     >
