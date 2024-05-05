@@ -1,0 +1,22 @@
+.rms-clock-loader-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.rms-clock-loader-wrapper span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform-origin: 0% 50%;
+  animation: animate-clock linear;
+}
+
+@keyframes animate-clock {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -6,3 +6,4 @@ export { default as BounceLoader } from "./bounce-loader";
 export { default as ClimbingBoxLoader } from "./climbing-box-loader";
 export { default as CircleLoader } from "./circle-loader";
 export { default as ClipLoader } from "./clip-loader";
+export { default as ClockLoader } from "./clock-loader";
