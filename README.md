@@ -49,7 +49,7 @@ pnpm add react-magic-spinners
 ```javascript
 import { BeatLoader } from "react-magic-spinners";
 ```
-Now you can use both components like bellow.
+Now you can use all components like bellow.
 
  _Use with default styles:_
  
