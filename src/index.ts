@@ -8,3 +8,4 @@ export { default as CircleLoader } from "./circle-loader";
 export { default as ClipLoader } from "./clip-loader";
 export { default as ClockLoader } from "./clock-loader";
 export { default as DotLoader } from "./dot-loader";
+export { default as FadeLoader } from "./fade-loader";
