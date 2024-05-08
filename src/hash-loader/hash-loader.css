@@ -1,0 +1,18 @@
+.rms-hash-loader-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.rms-hash-loader-wrapper span {
+  position: absolute;
+  animation: animate-hash ease-in-out;
+}
+
+@keyframes animate-hash {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
